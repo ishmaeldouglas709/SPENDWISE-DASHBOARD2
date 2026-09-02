@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise Dashboard</title>
+  <meta name="description" content="SpendWise is a personal budgeting dashboard concept — track balances, monthly spend, and category budgets at a glance.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / link preview tags -->
+  <meta property="og:title" content="SpendWise Dashboard">
+  <meta property="og:description" content="A static, responsive budgeting dashboard built with HTML and CSS Grid/Flexbox. JavaScript functionality coming next week.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/2769/2769339.png">
+  <!-- TODO once published: set this to your real GitHub Pages URL -->
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/SPENDWISE-DASHBOARD/">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <!-- Sidebar / Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <img src="https://cdn-icons-png.flaticon.com/512/2769/2769339.png" alt="SpendWise logo" width="32">
+        <span>SpendWise</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">
+          <span class="nav-icon">📊</span>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">💳</span>
+          <span>Transactions</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">📈</span>
+          <span>Reports</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🎯</span>
+          <span>Budgets</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">⚙️</span>
+          <span>Settings</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="user-chip">
+          <span class="user-avatar">CK</span>
+          <div>
+            <p class="user-name">Caleb K.</p>
+            <p class="user-role">Free Plan</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <div class="main">
+
+      <!-- Header -->
+      <header class="dashboard-header">
+        <div class="header-title">
+          <h1>Dashboard</h1>
+          <p class="header-subtitle">Welcome back, here's your spending overview.</p>
+        </div>
+
+        <div class="header-actions">
+          <div class="search-box">
+            <span>🔍</span>
+            <input type="text" placeholder="Search transactions...">
+          </div>
+          <button type="button" class="btn-primary">+ Add Expense</button>
+          <div class="header-avatar">CK</div>
+        </div>
+      </header>
+
+      <!-- Summary strip -->
+      <section class="summary-strip">
+        <div class="summary-item">
+          <p class="summary-label">Total Balance</p>
+          <p class="summary-value">$4,320.50</p>
+        </div>
+        <div class="summary-item">
+          <p class="summary-label">Monthly Spend</p>
+          <p class="summary-value">$1,180.75</p>
+        </div>
+        <div class="summary-item">
+          <p class="summary-label">Monthly Budget</p>
+          <p class="summary-value">$1,500.00</p>
+        </div>
+      </section>
+
+      <!-- Category cards -->
+      <section class="cards-grid">
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon icon-food">🍔</span>
+            <span class="card-trend trend-up">+4%</span>
+          </div>
+          <p class="card-label">Food</p>
+          <p class="card-amount">$320.40</p>
+          <p class="card-sub">of $400.00 budget</p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon icon-transport">🚌</span>
+            <span class="card-trend trend-down">-2%</span>
+          </div>
+          <p class="card-label">Transport</p>
+          <p class="card-amount">$96.00</p>
+          <p class="card-sub">of $150.00 budget</p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon icon-rent">🏠</span>
+            <span class="card-trend trend-flat">0%</span>
+          </div>
+          <p class="card-label">Rent</p>
+          <p class="card-amount">$500.00</p>
+          <p class="card-sub">of $500.00 budget</p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon icon-entertainment">🎬</span>
+            <span class="card-trend trend-up">+12%</span>
+          </div>
+          <p class="card-label">Entertainment</p>
+          <p class="card-amount">$74.20</p>
+          <p class="card-sub">of $100.00 budget</p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon icon-savings">🐷</span>
+            <span class="card-trend trend-up">+8%</span>
+          </div>
+          <p class="card-label">Savings</p>
+          <p class="card-amount">$650.00</p>
+          <p class="card-sub">of $600.00 goal</p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon icon-utilities">💡</span>
+            <span class="card-trend trend-down">-5%</span>
+          </div>
+          <p class="card-label">Utilities</p>
+          <p class="card-amount">$88.15</p>
+          <p class="card-sub">of $120.00 budget</p>
+        </article>
+
+      </section>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
