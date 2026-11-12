@@ -1,6 +1,6 @@
 # SpendWise Dashboard
 
-**Live site:** https://YOUR-USERNAME.github.io/SPENDWISE-DASHBOARD/ *(update this link after publishing to GitHub Pages)*
+**Live site:** [https://YOUR-USERNAME.github.io/SPENDWISE-DASHBOARD/](https://thunderous-sunshine-89dc53.netlify.app/) *(update this link after publishing to GitHub Pages)*
 
 ## What this project is
 
